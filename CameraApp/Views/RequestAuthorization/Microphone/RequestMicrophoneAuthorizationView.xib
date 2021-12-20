@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RequestMicrophoneAuthorizationView" customModule="CameraApp" customModuleProvider="target">
+            <connections>
+                <outlet property="actionButton" destination="xBX-C9-YcZ" id="Ymf-B0-Eta"/>
+                <outlet property="actionButtonWidthConstraint" destination="4d9-V3-vVl" id="jz4-Th-oJZ"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="rx8-Q1-lco"/>
+                <outlet property="messageLabel" destination="1jm-Jl-A1g" id="dhT-oA-hIq"/>
+                <outlet property="microphoneImageView" destination="ybZ-jL-HbZ" id="kPU-xw-s3C"/>
+                <outlet property="titleLabel" destination="DsB-C8-AMz" id="2vM-9V-mNe"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mic" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ybZ-jL-HbZ" userLabel="Microphone Image View">
+                    <rect key="frame" x="177" y="194.5" width="60" height="60"/>
+                    <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="dKR-zZ-1kW"/>
+                        <constraint firstAttribute="height" constant="60" id="s9O-LO-dAN"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Microfon Authorization" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DsB-C8-AMz" userLabel="Title Label">
+                    <rect key="frame" x="20" y="285" width="374" height="30"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We require microphone authorization to provide you best experience." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" enabled="NO" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1jm-Jl-A1g" userLabel="Massage Lable">
+                    <rect key="frame" x="20" y="336" width="374" height="41"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xBX-C9-YcZ" userLabel="Action Button">
+                    <rect key="frame" x="152" y="407" width="118" height="47"/>
+                    <color key="backgroundColor" red="0.058823529409999999" green="0.058823529409999999" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="4d9-V3-vVl"/>
+                        <constraint firstAttribute="height" constant="30" id="UjG-cD-sfg"/>
+                    </constraints>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Allow">
+                        <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="actionButtonHandlerWithBtn:" destination="-1" eventType="touchUpInside" id="SDo-qb-AH1"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="DsB-C8-AMz" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="16M-7F-2ot"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="DsB-C8-AMz" secondAttribute="trailing" constant="20" id="6Zj-E2-3o5"/>
+                <constraint firstItem="xBX-C9-YcZ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="DCV-P0-Sip"/>
+                <constraint firstItem="DsB-C8-AMz" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="EeD-uU-OTg"/>
+                <constraint firstItem="DsB-C8-AMz" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="G13-Vf-EZv"/>
+                <constraint firstItem="ybZ-jL-HbZ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="I8y-Ot-PQC"/>
+                <constraint firstItem="1jm-Jl-A1g" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="KPI-XE-rzf"/>
+                <constraint firstItem="DsB-C8-AMz" firstAttribute="top" secondItem="ybZ-jL-HbZ" secondAttribute="bottom" constant="30" id="Pdo-J1-R5B"/>
+                <constraint firstItem="DsB-C8-AMz" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="QoT-xz-Xcp"/>
+                <constraint firstItem="1jm-Jl-A1g" firstAttribute="top" secondItem="DsB-C8-AMz" secondAttribute="bottom" constant="21" id="R64-gc-nCi"/>
+                <constraint firstItem="DsB-C8-AMz" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="UmV-0y-rQF"/>
+                <constraint firstAttribute="trailing" secondItem="1jm-Jl-A1g" secondAttribute="trailing" constant="20" id="WFS-NT-mU6"/>
+                <constraint firstItem="xBX-C9-YcZ" firstAttribute="top" secondItem="1jm-Jl-A1g" secondAttribute="bottom" constant="30" id="XRE-pI-sWV"/>
+                <constraint firstItem="xBX-C9-YcZ" firstAttribute="centerX" secondItem="1jm-Jl-A1g" secondAttribute="centerX" id="k2o-QR-KbC"/>
+                <constraint firstItem="1jm-Jl-A1g" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="q1e-d2-ez8"/>
+                <constraint firstItem="DsB-C8-AMz" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="rhE-eh-P8A"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mic" catalog="system" width="108" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
