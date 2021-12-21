@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D79A3FF62771B61D008E9B74 /* CaptureSessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79A3FF52771B61D008E9B74 /* CaptureSessionController.swift */; };
 		D7A771A127710CA800E03133 /* VideoPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A771A027710CA800E03133 /* VideoPreviewView.swift */; };
 		D7F4B68E276609B90007CD41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F4B68D276609B90007CD41 /* AppDelegate.swift */; };
 		D7F4B690276609B90007CD41 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7F4B68F276609B90007CD41 /* SceneDelegate.swift */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D79A3FF52771B61D008E9B74 /* CaptureSessionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureSessionController.swift; sourceTree = "<group>"; };
 		D7A771A027710CA800E03133 /* VideoPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreviewView.swift; sourceTree = "<group>"; };
 		D7F4B68A276609B90007CD41 /* CameraApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CameraApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7F4B68D276609B90007CD41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D79A3FF42771B5DC008E9B74 /* CaptureSession */ = {
+			isa = PBXGroup;
+			children = (
+				D79A3FF52771B61D008E9B74 /* CaptureSessionController.swift */,
+			);
+			path = CaptureSession;
+			sourceTree = "<group>";
+		};
 		D7A7719F27710C6500E03133 /* VideoPreview */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +182,7 @@
 		D7F4B6B0276628740007CD41 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D79A3FF42771B5DC008E9B74 /* CaptureSession */,
 				D7F4B6B1276628810007CD41 /* RequestAuthorization */,
 			);
 			path = Controllers;
@@ -335,6 +346,7 @@
 				D7F4B6C4276671B70007CD41 /* UIView+AddShadow.swift in Sources */,
 				D7F4B690276609B90007CD41 /* SceneDelegate.swift in Sources */,
 				D7F4B6BC27665A140007CD41 /* RequestMicrophoneAuthorizationController.swift in Sources */,
+				D79A3FF62771B61D008E9B74 /* CaptureSessionController.swift in Sources */,
 				D7F4B6B72766523B0007CD41 /* RequestMicrophoneAuthorizationView.swift in Sources */,
 				D7F4B6AD27660DB50007CD41 /* RequestCameraAuthorizationView.swift in Sources */,
 				D7F97BCD276F6E0F00488746 /* AppSetup.swift in Sources */,

@@ -8,11 +8,17 @@
 import UIKit
 
 class CaptureViewController: UIViewController {
+    
+    @IBOutlet private weak var videoPreviewView: VideoPreviewView!
+    
+    private lazy var captureSessionController = CaptureSessionController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        view.backgroundColor = .lightGray
+        
+        videoPreviewView.videoPreviewLayer.session =
+        captureSessionController.getCaptureSession()
+    
     }
 
 }
