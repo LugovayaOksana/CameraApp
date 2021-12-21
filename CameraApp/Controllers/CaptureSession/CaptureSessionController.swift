@@ -15,7 +15,7 @@ class CaptureSessionController: NSObject {
         super.init()
         
         if let captureDevice =  AVCaptureDevice.default(
-            .builtInDualCamera,
+            .builtInDualWideCamera,
             for: .video,
             position: .back) {
             
